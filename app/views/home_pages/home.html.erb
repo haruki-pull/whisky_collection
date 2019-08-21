@@ -1,2 +1,14 @@
-<h1>HomePages#home</h1>
-<p>Find me in app/views/home_pages/home.html.erb</p>
+<a class = "jump_home" href="#">ホーム</a>
+<a class = "jump_editor_list" href="#">編集</a>
+<a class = "jump_collectin_list" href="#">一覧</a>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:search_box, "検索:") %>
+  <%= text_field_tag(:search_box) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<p class = "page_title">ホーム</p>
+<h2 cleaa = "how-to-use">このアプリの使い方</h2>
+  <p>このアプリはあなたが作るウイスキーの図鑑です！<br>
+  あなただけの図鑑を完成させましょう</p>
