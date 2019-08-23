@@ -1,0 +1,14 @@
+<a class = "jump_home" href="#">ホーム</a>
+<a class = "jump_editor_list" href="#">編集</a>
+<a class = "jump_collectin_list" href="#">一覧</a>
+
+<%= form_tag("/search", method: "get") do %>
+  <%= label_tag(:search_box, "検索:") %>
+  <%= text_field_tag(:search_box) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<p class = "page_title">編集</p>
+<p class = "about_page">このページはコレクションの追記、編集を行うページです</p>
+
+<img src="" alt="">
