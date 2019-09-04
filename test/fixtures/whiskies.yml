@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  type: 
+  kind: 
   comment: MyText
   rank: 1.5
 
 two:
   name: MyString
-  type: 
+  kind: 
   comment: MyText
   rank: 1.5

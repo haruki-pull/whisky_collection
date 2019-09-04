@@ -1,28 +1,8 @@
 <% provide :title, "edit" %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= yield(:title) %> | Whisky Collection</title>
-  </head>
 
-  <body id = "edit_individual">
-    <header>
-      <nav>
-        <li><a class = "jump_home" href="#">ホーム</a></li>
-        <li><a class = "jump_editor_list" href="#">編集</a></li>
-        <li><a class = "jump_collectin_list" href="#">一覧</a></li>
-        <%= form_tag("/search", method: "get") do %>
-        <%= label_tag(:search_box, "検索:") %>
-        <%= text_field_tag(:search_box) %>
-        <%= submit_tag("Search") %>
-      <% end %>
-      </nav>
-    </header>
     <section>
       <input class = "whisky_name" type = "text">
       <input class = "whisky_kind" type = "text">
       <input class = "whisky_evaluation" type = "text">
       <input class = "whisky_comment" type = "text">
-      
-
-      input.evalution+input.whisky_comment+input.whisky_picture
+    </section>

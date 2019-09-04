@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WhiskyCollection</title>
+    <title><%= yield (:title)%> / WhiskyCollection</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,18 @@
   </head>
 
   <body>
+   <header>
+      <nav>
+        <li><a class = "jump_home" href="#">ホーム</a></li>
+        <li><a class = "jump_editor_list" href="#">編集</a></li>
+        <li><a class = "jump_collectin_list" href="#">一覧</a></li>
+        <%= form_tag("/search", method: "get") do %>
+        <%= label_tag(:search_box, "検索:") %>
+        <%= text_field_tag(:search_box) %>
+        <%= submit_tag("Search") %>
+        <% end %>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
