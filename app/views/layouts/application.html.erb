@@ -11,17 +11,42 @@
 
   <body>
    <header>
-      <nav>
-        <li><a class = "jump_home" href="#">ホーム</a></li>
-        <li><a class = "jump_editor_list" href="#">編集</a></li>
-        <li><a class = "jump_collectin_list" href="#">一覧</a></li>
-        <%= form_tag("/search", method: "get") do %>
-        <%= label_tag(:search_box, "検索:") %>
-        <%= text_field_tag(:search_box) %>
-        <%= submit_tag("Search") %>
-        <% end %>
-      </nav>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>  
+      <div class="collapse navbar-collapse justify-content-around" id="navbarNav4">
+    
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">ホーム</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">一覧</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">編集</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <%= form_tag("/search", method: "get") do %>
+            <%= label_tag(:search_box, "検索:") %>
+            <%= text_field_tag(:search_box) %>
+            <%= submit_tag("Search") %>
+            <% end %>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     </header>
-    <%= yield %>
+    <div class = "container">
+      <%= yield %>
+    </div>
   </body>
 </html>
