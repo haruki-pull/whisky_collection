@@ -15,4 +15,28 @@
 
  @import "bootstrap"; 
 
+/*全体共通設定*/
+.container{
+     margin: 5% 10%;
+     font-size: 16px;
+ }
+.page_title-box{
+    background-color:rgba(125,125,125,0.3);
+    -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+.page_title{
+    margin:3px;
+}
+.about_page{
+    display:block;
+    text-align: center;
+
+}
+/*ホームページ設定*/
+.how-to-use{
+    padding-top:50px;
+    text-align:center;
+}
  
