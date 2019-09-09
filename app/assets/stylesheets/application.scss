@@ -14,6 +14,7 @@
  */
  @import "bootstrap"; 
 
+<<<<<<< HEAD
 /*全体共通設定*/
 .container{
      margin: 5% 10%;
@@ -39,3 +40,13 @@
     text-align:center;
 }
  
+=======
+ .page_title-box{
+
+    h2{
+        -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+    }   
+  }
+>>>>>>> write_html
