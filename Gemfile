@@ -67,6 +67,9 @@ gem "carrierwave"
 gem 'kaminari-bootstrap', '~> 3.0.1'
 #ソート機能追加
 gem 'ransack'
-
+#星評価機能
+gem 'ratyrate'
+#deviseの追加
+gem 'devise'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
