@@ -1,24 +1,37 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Whisky_collection
+====
 
-Things you may want to cover:
-add branch-b
-* Ruby version
+##紹介
+今までに飲んだウイスキーをコレクションしていくアプリです。
+飲んだら忘れないうちに書き込んで！
+後で誰かに勧めてみよう
 
-* System dependencies
+##詳細
+各ウイスキーには
+- name(名前)
+- kind(種類)
+- comment(感想)
+- rank(1〜3の星評価)
+- picture(ウイスキーの写真) 
+の5項目で情報を残せます。
 
-* Configuration
+また検索機能を使ってpictureを除く4項目で絞り込み検索も出来ます。
 
-* Database creation
+## Demo
 
-* Database initialization
+## VS. 
 
-* How to run the test suite
+## Requirement
 
-* Services (job queues, cache servers, search engines, etc.)
+## Usage
 
-* Deployment instructions
+## Install
 
-* ...
+## Contribution
+
+## Licence
+
+## Author
+haruki-pull
