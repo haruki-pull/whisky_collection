@@ -7,6 +7,14 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.raty.js"></script>
+    <script>
+      $(function(){
+        $('#star1').raty();
+      });
+    </script>
   </head>
 
   <body>
@@ -51,5 +59,6 @@
       </div>
       <%= yield %>
     </div>
+     <p id="star1"></p>
   </body>
 </html>

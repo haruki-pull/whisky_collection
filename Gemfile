@@ -67,6 +67,7 @@ gem "carrierwave"
 gem 'kaminari-bootstrap', '~> 3.0.1'
 #ソート機能追加
 gem 'ransack'
-
+#simpleformの実装
+gem 'simple_form'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
