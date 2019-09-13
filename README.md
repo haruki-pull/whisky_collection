@@ -3,12 +3,12 @@
 Whisky_collection
 ====
 
-##紹介
+## 紹介
 今までに飲んだウイスキーをコレクションしていくアプリです。
 飲んだら忘れないうちに書き込んで！
 後で誰かに勧めてみよう
 
-##詳細
+## 詳細
 各ウイスキーには
 - name(名前)
 - kind(種類)
@@ -33,5 +33,5 @@ Whisky_collection
 
 ## Licence
 
-## Author
+## 
 haruki-pull
