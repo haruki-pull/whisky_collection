@@ -2,7 +2,7 @@
 <% provide :page_title,"編集"%>
 <h3 class = "about_page">編集したいウイスキーを選んでください</h3>
 
-<%= form_for(@whisky, url:edit_individual_path,method: :post) do |f| %>
+<%= form_for(@whisky, url: {controller:"edit_pages", action:"new" ,method: :post}) do |f| %>
   <div class="field">
     <%= f.label :name, "名前" %>
     <%= f.text_field :name %>
@@ -13,6 +13,21 @@
     <%= f.text_field :kind %>
   </div>
   
+  <div class="field">
+    <%= f.label :comment, "コメント" %>
+    <%= f.text_area :comment %>
+  </div>
+
+  <div class="field">
+    <%= f.label :rank, "星" %>
+    <%= f.text_field :rank %>
+  </div>
+  
+  <div class="field">
+    <%= f.label :picture, "写真" %>
+    <%= f.text_field :picture %>
+  </div>
+
   <div class="actions">
     <%= f.submit "登録する" %>
   </div>
