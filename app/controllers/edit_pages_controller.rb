@@ -16,6 +16,8 @@ class EditPagesController < ApplicationController
         @whisky.save
         redirect_to edit_individual_path
     end
+
+   
     
     private
     
