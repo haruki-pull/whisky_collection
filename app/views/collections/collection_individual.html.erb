@@ -1,3 +1,6 @@
 <% provide :title, "collection" %>
 <h2 class = "page_title">コレクション</h2>
 
+   <% @whiskies.each do |whisky| %>
+        <%= whisky.name %><br>
+    <% end %>
